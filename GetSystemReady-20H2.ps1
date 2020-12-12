@@ -232,7 +232,7 @@ Function InstallTitusProgs {
 	Write-Output "Installing Chocolatey"
 	Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 	choco install chocolatey-core.extension -y
-	choco install chocolateygui
+	choco install chocolateygui -y
 	Write-Output "Running O&O Shutup with Recommended Settings"
 	Import-Module BitsTransfer
 	Start-BitsTransfer -Source "https://raw.githubusercontent.com/ChrisTitusTech/win10script/master/ooshutup10.cfg" -Destination ooshutup10.cfg
@@ -243,20 +243,21 @@ Function InstallTitusProgs {
 Function InstallAllApps {
     #Install Essential Software
 	Show-Choco-Menu -Title "Do you want to install Thunderbird Mail?" -ChocoInstall "thunderbird"
-	Show-Choco-Menu -Title "Do you want to install FoxIt PDF Reader?" -ChocoInstall "foxitreader"
+	Show-Choco-Menu -Title "Do you want to install Okular PDF Reader?" -ChocoInstall "okular"
     Show-Choco-Menu -Title "Do you want to install 7-Zip?" -ChocoInstall "7zip"
     Show-Choco-Menu -Title "Do you want to install Libre Office?" -ChocoInstall "libreoffice-fresh"
     Show-Choco-Menu -Title "Do you want to install VLC?" -ChocoInstall "vlc"
     # Install Additional Software
     Show-Choco-Menu -Title "Do you want to install VirtualBox?" -ChocoInstall "virtualbox"
-    Show-Choco-Menu -Title "Do you want to install FileZilla?" -ChocoInstall "filezilla"
-    Show-Choco-Menu -Title "Do you want to install CCleaner?" -ChocoInstall "ccleaner"
+    #Show-Choco-Menu -Title "Do you want to install FileZilla?" -ChocoInstall "filezilla"
+	Show-Choco-Menu -Title "Do you want to install CCleaner?" -ChocoInstall "ccleaner"
+	Show-Choco-Menu -Title "Do you want to install KeePassXC Password Manager?" -ChocoInstall "keepassxc"
 
 
  
     # Install Browsers
     Show-Choco-Menu -Title "Do you want to install Firefox?" -ChocoInstall "firefox"
-    Show-Choco-Menu -Title "Do you want to install Opera?" -ChocoInstall "tor-browser"
+    Show-Choco-Menu -Title "Do you want to install Tor-Browser-Bundle?" -ChocoInstall "tor-browser"
 
     # Install Messaging Apps
     Show-Choco-Menu -Title "Do you want to install Element (Riot)?" -ChocoInstall "element-desktop"
