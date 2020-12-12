@@ -241,47 +241,25 @@ Function InstallTitusProgs {
 
 Function InstallAllApps {
     #Install Essential Software
-    Show-Choco-Menu -Title "Do you want to install Python 3?" -ChocoInstall "python3"
-    Show-Choco-Menu -Title "Do you want to install Pip?" -ChocoInstall "pip"
-    Show-Choco-Menu -Title "Do you want to install .NET?" -ChocoInstall "dotnetfx"
-    Show-Choco-Menu -Title "Do you want to install Windows Terminal?" -ChocoInstall "microsoft-windows-terminal"
-    Show-Choco-Menu -Title "Do you want to install Dell Command Update?" -ChocoInstall "dellcommandupdate"
-    Show-Choco-Menu -Title "Do you want to install Adobe Acrobat Reader?" -ChocoInstall "adobereader"
+	Show-Choco-Menu -Title "Do you want to install Thunderbird Mail?" -ChocoInstall "thunderbird"
+	Show-Choco-Menu -Title "Do you want to install FoxIt PDF Reader?" -ChocoInstall "foxitreader"
     Show-Choco-Menu -Title "Do you want to install 7-Zip?" -ChocoInstall "7zip"
     Show-Choco-Menu -Title "Do you want to install Libre Office?" -ChocoInstall "libreoffice-fresh"
     Show-Choco-Menu -Title "Do you want to install VLC?" -ChocoInstall "vlc"
     # Install Additional Software
     Show-Choco-Menu -Title "Do you want to install VirtualBox?" -ChocoInstall "virtualbox"
     Show-Choco-Menu -Title "Do you want to install FileZilla?" -ChocoInstall "filezilla"
-    Show-Choco-Menu -Title "Do you want to install Torrent Client?" -ChocoInstall "transmission"
     Show-Choco-Menu -Title "Do you want to install CCleaner?" -ChocoInstall "ccleaner"
-    Show-Choco-Menu -Title "Do you want to install Github Desktop?" -ChocoInstall "github-desktop"
-    Show-Choco-Menu -Title "Do you want to install Pencil Project?" -ChocoInstall "pencil"
-    Show-Choco-Menu -Title "Do you want to install SceneBuilder?" -ChocoInstall "scenebuilder9"
-    Show-Choco-Menu -Title "Do you want to install Wireshark?" -ChocoInstall "wireshark"
-    Show-Choco-Menu -Title "Do you want to install WinPcap?" -ChocoInstall "winpcap"
-    Show-Choco-Menu -Title "Do you want to install Docker Desktop?" -ChocoInstall "docker-desktop"
+
+
+ 
     # Install Browsers
     Show-Choco-Menu -Title "Do you want to install Firefox?" -ChocoInstall "firefox"
-    Show-Choco-Menu -Title "Do you want to install Opera?" -ChocoInstall "opera"
-    # Install Gaming Device's Softwares
-    Show-Choco-Menu -Title "Do you want to install Steelseries Engine?" -ChocoInstall "steelseries-engine"
-    # Install Game Launchers
-    Show-Choco-Menu -Title "Do you want to install Steam?" -ChocoInstall "steam"
-    Show-Choco-Menu -Title "Do you want to install Battle.Net?" -ChocoInstall "battle.net"
-    Show-Choco-Menu -Title "Do you want to install UPlay?" -ChocoInstall "uplay"
-    Show-Choco-Menu -Title "Do you want to install Epic?" -ChocoInstall "epicgameslauncher"
+    Show-Choco-Menu -Title "Do you want to install Opera?" -ChocoInstall "tor-browser"
+
     # Install Messaging Apps
-    Show-Choco-Menu -Title "Do you want to install Discord?" -ChocoInstall "discord"
-    Show-Choco-Menu -Title "Do you want to install Telegram?" -ChocoInstall "telegram"
-    # Install Java
-    Show-Choco-Menu -Title "Do you want to install Java 11 JRE?" -ChocoInstall "adoptopenjdk11jre"
-    Show-Choco-Menu -Title "Do you want to install Java 11 JDK?" -ChocoInstall "adoptopenjdk11"
-    # Install IDE Softwares
-    Show-Choco-Menu -Title "Do you want to install VS Code?" -ChocoInstall "vscode"
-    Show-Choco-Menu -Title "Do you want to install IntelliJ Idea?" -ChocoInstall "intellijidea-ultimate"
-    Show-Choco-Menu -Title "Do you want to install CLion?" -ChocoInstall "clion-ide"
-    Show-Choco-Menu -Title "Do you want to install Phpstorm?" -ChocoInstall "phpstorm"
+    Show-Choco-Menu -Title "Do you want to install Element (Riot)?" -ChocoInstall "element-desktop"
+
 }
 
 ##########
@@ -2618,7 +2596,9 @@ Function DebloatAll {
         "*Royal Revolt*"
         "*Sway*"
         "*Speed Test*"
-        "*Dolby*"
+		"*Dolby*"
+		"*Candy Crush Saga*"
+		
              
         #Optional: Typically not removed but you can if you need to for some reason
         "*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
