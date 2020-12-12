@@ -4,4 +4,5 @@ This script is a fork rom teknolojikpanda, who forked it from  Chris Titus proje
 # What does it do?
 - Set Privacy settings on Windows Installation
 - DeBloat Windows
-- Install Software with the Choco paket manager
+- Install Chocolatey and ChocolateyGUI
+- Install useful / required software with  choco
